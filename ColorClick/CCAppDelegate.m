@@ -10,6 +10,8 @@
 
 @implementation CCAppDelegate
 
+@synthesize window = _window;
+
 - (void)dealloc
 {
     [super dealloc];
@@ -20,4 +22,9 @@
     // Insert code here to initialize your application
 }
 
+- (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)flag
+{
+    [self.window makeKeyAndOrderFront:nil];
+    return NO;
+}
 @end
