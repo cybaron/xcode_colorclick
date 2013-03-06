@@ -12,5 +12,7 @@
 
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSImageCell *imageView;
+@property (assign) IBOutlet NSBox *colorBox;
+@property (assign) IBOutlet NSTextField *colorLabel;
 
 @end
